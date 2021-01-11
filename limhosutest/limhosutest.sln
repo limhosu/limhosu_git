@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "limhosutest", "limhosutest\limhosutest.pyproj", "{57979B04-B693-4485-8982-CD2B0043387B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57979B04-B693-4485-8982-CD2B0043387B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57979B04-B693-4485-8982-CD2B0043387B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9627AFA-29CC-4E3C-8FF7-7A08D3F1D48E}
+	EndGlobalSection
+EndGlobal
