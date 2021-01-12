@@ -10,3 +10,4 @@ df["ListingDate"]=pd.to_datetime(df["ListingDate"])
 
 df["ListingYear"]=df["ListingDate"].dt.year
 print(df[["ListingDate", "ListingYear"]])
+# 테스트
