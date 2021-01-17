@@ -3,8 +3,9 @@ import pandas as pd
 import FinanceDataReader as fdr
 import seaborn as sns
 import numpy as np
-df_krx = fdr.StockListing("KRX")
-df_krx.to_csv("d:/finance/krx.csv", index=False)
+
+# df_krx = fdr.StockListing("KRX")
+# df_krx.to_csv("d:/finance/krx.csv", index=False)
 df = pd.read_csv("d:/finance/krx.csv")
 df["ListingDate"]=pd.to_datetime(df["ListingDate"])
 
@@ -40,6 +41,14 @@ font_family = get_font_family()
 plt.rc("font", family=font_family)
 plt.rc("axes", unicode_minus=False)
 plt.style.use("ggplot")
-x=pd.Series([1, 3, 5, -7, 9]).plot(title="한글폰트")
+
+# plt.show()
+
+df["Industry"].value_counts().head(30).sort_values().plot.barh()
+sns.countplot(data=df, y="Region",
+              palette="Blues_r",
+              order=df["Region"].value_counts().index)
+
 plt.show()
+
 
