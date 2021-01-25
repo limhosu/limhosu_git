@@ -1,8 +1,6 @@
-def number_generator():
-    yield 0
-    yield 1
-    yield 2
+a = [10, 20, 30, 20]
 
-for i in number_generator():
-    print(i)
+print(a)
+a[len(a):]=[500, 600]
+print(a)
 

@@ -1,3 +1,4 @@
+# xperp 데이터 가져와서 동,호별 전월데이터 만들기
 import pandas as pd
 import numpy as np
 import openpyxl
@@ -19,4 +20,4 @@ elec=elec[elec.동!='합계']
 elec=elec[elec.호>0]
 elec=elec.fillna(method='ffill')
 
-elec.to_excel('d:/전기수도계산/수도요금/2020년09월연습.xlsx')
+elec.to_excel('d:/전기수도계산/수도요금/2020년09월연습.xlsx', index=False)
