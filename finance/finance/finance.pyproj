@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6d7f4d20-3458-4247-b7fe-2d963ce03019</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>finance2.py</StartupFile>
+    <StartupFile>finance3.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -41,6 +41,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="module7.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="finance3.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="finance2.py">

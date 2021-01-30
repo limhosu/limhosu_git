@@ -1,6 +1,6 @@
-a = [10, 20, 30, 20]
-
-print(a)
-a[len(a):]=[500, 600]
-print(a)
-
+a = [38, 21, 53, 62, 19]
+i = 0
+print(len(a))
+while i < len(a):
+    print(a[i])
+    i +=1
