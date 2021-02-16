@@ -4,9 +4,9 @@ import FinanceDataReader as fdr
 import seaborn as sns
 import numpy as np
 
-df_krx = fdr.StockListing("KRX")
-df_krx.to_csv("d:/finance/krx.csv", index=False)
-df = pd.read_csv("d:/finance/krx.csv")
+df_kospi = fdr.StockListing("KOSPI")
+df_kospi.to_csv("d:/finance/kospi.csv", index=False)
+df = pd.read_csv("d:/finance/kospi.csv")
 df["ListingDate"]=pd.to_datetime(df["ListingDate"])
 
 df["ListingYear"]=df["ListingDate"].dt.year
@@ -50,6 +50,6 @@ plt.style.use("ggplot")
 # sns.lineplot(data=df_year_market, x="ListingYear", y="count", hue="Market", ci=None)
 # plt.show()
 # df = df[df["ListingYear"] < 1970]
-df_sr = pd.crosstab(df["Sector"], df["Region"])
+#df_sr = pd.crosstab(df["Sector"], df["Region"])
 
-print(df_sr.loc["소프트웨어 개발 및 공급업"])
+#print(df_sr.loc["소프트웨어 개발 및 공급업"])

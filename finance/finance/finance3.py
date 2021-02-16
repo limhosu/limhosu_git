@@ -6,16 +6,6 @@ from os import path
 item_code = "005490"
 item_name = "포스코"
 
-#user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
-#url = 'https://finance.naver.com/item/frgn.nhn?code=005930&page=1'
-
-
-#r = rq.get(url, headers={"user-agent": user_agent}) # headers지정안하면 뒤에 error가 나네요
-#tb = r.content.decode('euc-kr')
-##naver encoding이 euc-kr로 되어있어서 cp949나 utf-8은 안되네요.
-##table = pd.read_html(tb) 이렇게 실행하면 list형식으로 반환되어 사용어렵네요.
-#table = pd.read_html(tb, header = 0)[2] #dataFrame
-#temp = table
 
 def get_day_list(item_code, page_no):
     """
@@ -47,12 +37,9 @@ while True:
     if len(df_day) < 20:
         break
 
-print(len(item_list))
 df = pd.concat(item_list)
 
-
 df = df.drop_duplicates()
-
 date = df.iloc[1]['날짜']
 file_name = f"{item_name}_{item_code}_{date}.csv"
 folder = r'd:/finance/{0}'.format(item_name)
