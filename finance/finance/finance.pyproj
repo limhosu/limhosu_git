@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6d7f4d20-3458-4247-b7fe-2d963ce03019</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>finance5.py</StartupFile>
+    <StartupFile>module3.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
